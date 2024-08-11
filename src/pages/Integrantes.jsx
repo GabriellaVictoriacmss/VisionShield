@@ -24,7 +24,7 @@ function Integrantes() {
         <section className="w-full flex flex-col items-center justify-center p-4 overflow-x-auto scrollbar-hidden">
 
 
-          <div className="flex flex-col md:flex-row gap-8 md:gap-20 items-center justify-center w-full mt-8">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center justify-center w-full mt-8">
             <div className="relative text-center border-2 border-main-purple py-32 px-10 rounded-[5px] transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg blur-effect scale-95 md:scale-100">
               <img
                 src={gabriella}

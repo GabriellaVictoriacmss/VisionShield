@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from "../components/Header";
 import arduino from "../assets/arduinoEquipamento.png";
+import bluetooth from "../assets/bluetooth.png";
 import bateria from "../assets/bateriaEquipamento.png";
 import led from "../assets/ledEquipamento.png";
 import moeda from "../assets/moeda.png";
@@ -105,7 +106,7 @@ function Equipamentos() {
                 <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute z-10 top-[150px] text-center w-[75%] font-poppins">Microcontrolador amplamente utilizado em projetos de eletrônica e robótica</p>
                 <div className="relative z-10 text-center flex items-center justify-center gap-2 transition-all duration-300 group-hover:mt-[120px]">
                   <img src={moeda} alt="" />
-                  <p className="font-poppins">R$ 79,90</p>
+                  <p className="font-poppins">R$ 54,90</p>
                 </div>
               </div>
 
@@ -124,6 +125,23 @@ function Equipamentos() {
                   <p className="font-poppins">R$ 19,90</p>
                 </div>
               </div>
+
+              {/* bluetooth */}
+              <div 
+                className="flex-shrink-0 w-[80%] md:w-[300px] h-[400px] text-white rounded-lg p-4 flex flex-col items-center justify-end relative overflow-hidden group mx-auto"
+              >
+                <img src={bluetooth} alt="Jumpers" className="w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 transform translate-y-full group-hover:translate-y-0"></div>
+                <div className="relative z-10 text-center transition-all duration-300 group-hover:translate-y-[-120px]">
+                  <h2 className=" mb-4 group-hover:mb-0 py-2 px-4 font-medium uppercase font-poppins border-2 text-white border-main-purple rounded-md">módulo bluetooth HC-05</h2>
+                </div>
+                <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute z-10 top-[150px] text-center w-[75%] font-poppins">Conectividade sem fio a dispositivos eletrônicos, permitindo a comunicação entre microcontroladores, como o Arduino,</p>
+                <div className="relative z-10 text-center flex items-center justify-center gap-2 transition-all duration-300 group-hover:mt-[120px]">
+                  <img src={moeda} alt="" />
+                  <p className="font-poppins">R$ 42,90</p>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

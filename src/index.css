@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .bg-mobile {
+    background-image: url('/src/assets/bg-mobile.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  .bg-desktop {
+    background-image: url('/src/assets/bg-desktop.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #000; 
+  min-height: 100vh; 
+  
+}
+
+@media (min-width: 768px) { 
+  body {
+    background-image: url('/src/assets/bg-desktop.png');
+  }
+}
+
+@media (max-width: 767px) { 
+  body {
+    background-image: url('/src/assets/bg-mobile.png'); 
+  }
+}
+
+
+
+/*hover imagens header */
+.image-animation {
+  position: relative;
+  display: inline-block;
+  transition: filter 0.3s ease;
+}
+
+.image-animation::after {
+  content: '';
+  position: absolute;
+  left: 12%; 
+  bottom: -4px; 
+  width: 76%; 
+  height: 2px;
+  background-color: #ffffff; 
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.image-animation:hover::after {
+  transform: scaleX(1);
+}
+
+.image-animation:hover {
+  filter: brightness(0.8); 
+}
+
+
+
+
+
+/*hover header*/
+
+.underline-animation {
+  position: relative;
+  display: inline-block;
+  color: #ffffff; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  left: 12%; 
+  bottom: -4px; 
+  width: 76%; 
+  height: 2px;
+  background-color: #ffffff; 
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.underline-animation:hover {
+  color: #a32fff; 
+}
+
+.underline-animation:hover::after {
+  transform: scaleX(1);
+}
+
+.active {
+  color: #a32fff;
+
+}
+
+
+
+.active::after {
+  color: #a32fff;
+  content: '';
+  position: absolute;
+  left: 12%; /*comeca do meio */
+  bottom: -4px;
+  width: 76%; 
+  height: 2px;
+  background-color: white; 
+  transform: scaleX(1); 
+  transition: transform 0.3s ease; 
+}
+
+
+/*barra de rolagem*/
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #333; 
+  border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: #A32FFF; 
+  border-radius: 10px; 
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #D3A7FF; 
+}
+
+
+

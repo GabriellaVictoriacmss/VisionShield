@@ -26,7 +26,7 @@ function ModoDeUso() {
 
           <div className="flex flex-col md:flex-row gap-12 items-center justify-center w-full mt-8 pt-8">
             
-            {/* Bloco ON/OFF */}
+            {/* ON/OFF */}
             <div className="bg-gradient-to-b from-custom-dark to-custom-light text-white p-6 rounded-lg w-full md:w-[288px] h-[480px] flex flex-col items-center justify-center text-center">
               <div className="flex flex-col items-center justify-center mb-8">
                 <img src={off} alt="" className="w-[68px] h-[68px] mb-4" /> 
@@ -37,7 +37,7 @@ function ModoDeUso() {
               </p>
             </div>
 
-            {/* Bloco DISTÂNCIA */}
+            {/* DISTÂNCIA */}
             <div className="text-white p-6 rounded-lg w-full md:w-[288px] h-[480px] flex flex-col items-center justify-center text-center border-main-purple border-2">
               <img src={glass} alt="" className="w-[68px] h-[68px] mb-4" /> 
               <h1 className='font-montserrat2 text-main-purple text-xl md:text-2xl'><strong>DISTÂNCIA</strong></h1> 
@@ -52,7 +52,7 @@ function ModoDeUso() {
               </p>
             </div>
 
-            {/* Bloco VIBRAÇÃO */}
+            {/* VIBRAÇÃO */}
             <div className="text-white p-6 rounded-lg w-full md:w-[288px] h-[480px] flex flex-col items-center justify-center text-center border-main-purple border-2">
               <img src={heart} alt="" className="w-[59px] h-[49px] mb-4" /> 
               <h1 className='font-montserrat2 text-main-purple text-xl md:text-2xl'><strong>VIBRAÇÃO</strong></h1> 

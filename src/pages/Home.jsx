@@ -26,7 +26,7 @@ function Home() {
             <div className="relative mt-9 w-[98%] md:w-auto">
               <div className="absolute left-0 top-0 border-s-4 border-secondary-purple h-full transition-transform duration-300 ease-in-out transform group-hover:scale-y-100 origin-bottom"></div>
               <p className='font-montserrat text-white text-center text-[18px] md:text-[22px] relative z-10 ml-4 md:ml-8 max-w-md md:max-w-lg break-words'>
-                <span className="font-bold">VisionShield</span> previne a miopia, reduzindo o esforço ocular e filtrando a luz azul. Invista na sua saúde ocular!
+                <span className="font-bold">VisionShield</span> diminui o risco do desenvolvimento de miopia, reduzindo o esforço ocular e filtrando a luz azul. Invista na sua saúde ocular!
               </p>
             </div>
             <div className="mt-40">

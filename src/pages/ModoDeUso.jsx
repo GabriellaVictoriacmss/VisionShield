@@ -42,10 +42,10 @@ function ModoDeUso() {
               <img src={glass} alt="" className="w-[68px] h-[68px] mb-4" /> 
               <h1 className='font-montserrat2 text-main-purple text-xl md:text-2xl'><strong>DISTÂNCIA</strong></h1> 
               <p className='text-white font-poppins text-base md:text-base p-4 font-extralight'>
-                <strong className='font-bold'>Objeto a menos de 12 cm:</strong> LED <span className="text-red-600">vermelho</span> ligado até afastar para 34 cm.
+                <strong className='font-bold'>Objeto a menos de 12 cm:</strong> LED <span className="text-red-600">vermelho</span> ligado até afastar para 13 cm.
               </p>
               <p className='text-white font-poppins text-base md:text-base p-4 font-extralight'>
-                <strong className='font-bold'>Objeto entre 35 cm e 40 cm:</strong> LED <span className="text-yellow-400">amarelo</span> ligado.
+                <strong className='font-bold'>Objeto entre 13 cm a 49 cm:</strong> LED <span className="text-yellow-400">amarelo</span> ligado.
               </p>
               <p className='text-white font-poppins text-base md:text-base p-4 font-extralight'>
                 <strong className='font-bold'>Objeto com distância maior ou igual a 50 cm: </strong> LED <span className="text-violet-700">roxo</span> ligado até afastar para 34 cm.

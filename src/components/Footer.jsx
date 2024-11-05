@@ -15,7 +15,7 @@ function Footer() {
   </p>
   <a 
     onClick={scrollToTop} 
-    className="mt-2 md:mt-0 flex items-center px-2 py-2 rounded-md bg-main-purple cursor-pointer"
+    className="mt-2 md:mt-0 flex items-center px-2 py-2 rounded-md bg-main-purple cursor-pointer ml-24"
   >
     <img src={arrow} alt="Arrow" className="w-5 h-5 md:w-6 md:h-6" />
   </a>

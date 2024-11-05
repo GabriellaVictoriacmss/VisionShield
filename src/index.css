@@ -19,6 +19,15 @@
   }
 }
 
+/* Exemplo de CSS customizado */
+.video-style {
+  width: 60%;
+  max-width: 20%; /* ou uma largura específica */
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover; /* Ajusta como o vídeo preenche o container */
+}
+
+
 
 html, body {
   height: 100%;
@@ -34,6 +43,7 @@ body {
 @media (min-width: 768px) { 
   body {
     background-image: url('/src/assets/bg-desktop.png');
+    background-size: cover;
   }
 }
 

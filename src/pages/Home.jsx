@@ -1,17 +1,19 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import logoSection from '../assets/logo-main.png';
-import glasses from '../assets/glasses-home.png';
+import glasses from '../assets/visioshield.mp4';
+import game from '../assets/game.mp4';
 import sindrome_visao from '../assets/sindrome_visao.png';
 import grafico from '../assets/grafico.png';
 import timer from '../assets/timer.png';
 import raio from '../assets/raio.png';
 import livro from '../assets/livro.png';
 
+
 function Home() {
   return (
     <>
-      <div className='min-h-screen bg-cover bg-no-repeat bg-mobile md:bg-desktop overflow-x-auto scrollbar-hidden ' id='home'>
+      <div className='min-h-screen bg-mobile md:bg-desktop overflow-x-auto scrollbar-hidden ' id='home'>
         <Header />
         <div className="" >
           <div className="flex flex-col items-center pt-4">
@@ -36,14 +38,18 @@ function Home() {
             </div>
           </section>
 
-          <section className='mt-52 px-4 md:px-0'>
+
+
+          <section className="mt-52 px-4 md:px-0">
             <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-32">
-              <img
+              <video
                 src={glasses}
-                alt=""
-                className="w-[60%] md:w-[20%] transition-transform duration-300 ease-in-out"
-              />
-              <div className='relative w-full md:w-[55%] max-w-lg text-white font-poppins flex flex-col gap-8 md:gap-16 text-center md:text-left'>
+                autoPlay
+                loop
+                muted
+                className="w-[250px] md:w-[280px] transition-transform duration-300 ease-in-out block border-4 border-main-purple rounded-lg"
+              ></video>
+              <div className="relative w-full md:w-[55%] max-w-lg text-white font-poppins flex flex-col gap-8 md:gap-16 text-center md:text-left">
                 <div className="text-base md:text-lg">
                   <span className="font-semibold text-main-purple">Sensor Ultrassônico - </span> Nosso óculos utiliza um sensor ultrassônico para monitorar a distância entre os olhos e objetos próximos.
                 </div>
@@ -56,6 +62,36 @@ function Home() {
               </div>
             </div>
           </section>
+
+
+          <section className="mt-52 px-4 md:px-0">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-32">
+              <video
+                src={game}
+                autoPlay
+                loop
+                muted
+                className="w-[250px] md:w-[280px]  md:w-[480px] transition-transform duration-300 ease-in-out block border-4 border-main-purple rounded-lg"
+              ></video>
+              <div className="relative w-full md:w-[55%] max-w-lg text-white font-poppins flex flex-col gap-8 md:gap-16 text-center md:text-left">
+                <div className="text-base md:text-lg">
+                  <span className="font-semibold text-main-purple">Criação do Jogo - </span> Desenvolvemos o jogo como uma forma divertida de descontrair durante o do desenvolvimento do projeto. Com ele, conseguimos equilibrar as demandas acadêmicas e o lazer, criando um espaço onde podemos relaxar e nos divertir juntos.
+                </div>
+                <div className="text-base md:text-lg">
+                  <span className="font-semibold text-main-purple">Habilidades Desenvolvidas - </span> Através da criação do jogo, conseguimos aprimorar nossas habilidades em design de games, como a elaboração de mecânicas, narrativa e estética. Cada etapa do desenvolvimento nos desafiou a aplicar conceitos teóricos de forma prática, tornando a experiência enriquecedora.
+                </div>
+                
+              </div>
+            </div>
+          </section>
+
+        
+
+
+
+
+
+
 
           <section className='mt-24 px-4 md:px-0 '>
             <div className="flex flex-col items-center pb-20">

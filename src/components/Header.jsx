@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logoHome from '../assets/logo-header.png';
-import loginIcon from '../assets/login.svg';
 import { IonIcon } from '@ionic/react';
 import { menuOutline, closeOutline } from 'ionicons/icons';
 
@@ -13,9 +12,9 @@ function Header() {
   };
 
   return (
-    <header className="bg-transparent text-white w-full top-0 left-0 z-50 pt-2" >
-      <div className="flex items-center justify-between p-4">
-        <NavLink to="/" className="mr-auto ml-8 image-animation">
+    <header className="bg-transparent text-white w-full top-0 left-0 z-50 pt-2">
+      <div className="flex items-center justify-center p-4">
+        <NavLink to="/" className="image-animation mr-24">
           <img 
             src={logoHome} 
             alt="Logo Home" 
@@ -67,14 +66,7 @@ function Header() {
             </li>
           </ul>
         </div>
-        <NavLink to="/login" className="hidden md:block ml-auto mr-8">
-          <img 
-            src={loginIcon} 
-            alt="Login" 
-            className="h-16 w-16 transition-transform duration-300 ease-in-out transform hover:scale-105" 
-            style={{ height: '25px', width: '25px' }} 
-          />
-        </NavLink>
+
         <button 
           className="text-white focus:outline-none md:hidden ml-auto" 
           onClick={toggleMenu}
@@ -133,7 +125,7 @@ function Header() {
             <NavLink
               to="/modo-de-uso"
               className={({ isActive }) => 
-                `underline-animation text-20px uppercase hover:text-hover-text-color${isActive ? 'active' : ''}`
+                `underline-animation text-20px uppercase hover:text-hover-text-color ${isActive ? 'active' : ''}`
               }
               onClick={() => setIsOpen(false)}
             >
@@ -152,14 +144,6 @@ function Header() {
             </NavLink>
           </li>
         </ul>
-        <NavLink to="/login" className="mt-4">
-          <img 
-            src={loginIcon} 
-            alt="Login" 
-            className="h-16 w-16 transition-transform duration-300 ease-in-out transform" 
-            style={{ height: '35px', width: '35px' }} 
-          />
-        </NavLink>
       </div>
     </header>
   );
